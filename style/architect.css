@@ -7,3 +7,206 @@
   font-weight:400;
   font-style: normal;
 }
+/* shared style */
+main > section{
+    margin-top: 130px;
+}
+.display-flex{
+    display: flex;
+}
+.text-gray{
+    color:#424242 ;
+}
+.text-light-gray{
+    color: #727272;
+}
+.back-light{
+background-color:rgba(255, 144, 14, 0.1);
+}
+.action-color{
+    color: #FF900E;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.btn{
+  background-color:#FF900E ;  
+  color:#FFFFFF ;
+  padding:20px 25px ;
+  font-size:1.2rem ;
+  font-weight: 600;
+  border: none;
+  border-radius: .5rem;
+
+}
+
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right:30px ;
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-weight:500 ;
+
+}
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* 1rem=16px */
+.navbar .logo{
+  font-weight:bold;
+  font-size: 2.5rem;  
+}
+/* banner related style */
+.banner-contant{
+max-width: 850px;
+margin: 0 auto;
+text-align: center;
+margin-bottom:50px ;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner img{
+    width: 100%;
+    
+}
+
+main{
+    max-width:1440px;
+    margin: 0 auto;
+}
+/* features section style */
+#features{
+    align-items: center;
+    gap:75px ;
+   
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 24px;
+}
+.features-contant{
+   max-width: 540px; 
+}
+
+#simple-text{
+    font-weight: 500;
+    font-size: 2.5rem;
+  
+
+}
+#bold-text{
+     font-size: 2.5rem; 
+      font-weight:bold;
+}
+.features-description{
+    font-size: 1rem;
+    line-height:1.5rem ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quary start */
+@media screen and (max-width:576px){
+
+.navbar ,.nav-links,
+#features{
+flex-direction: column;
+}  
+.team-image{
+grid-template-columns: repeat(1 ,1fr);
+   
+}
+
+}
+@media  screen and (min-width:576px)and (max-width:992px){
+   #features{
+flex-direction: column;
+}   
+    
+}
