@@ -104,13 +104,98 @@ main{
   
 
 }
-#bold-text{
+#bold-text,.section-title{
      font-size: 2.5rem; 
       font-weight:bold;
 }
 .features-description{
     font-size: 1rem;
     line-height:1.5rem ;
+}
+.section-container{
+    display:grid ;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.section-card{
+   border: 1px solid #FF900E; 
+   border-radius: 8px;
+   width:240px ;
+   height: 240px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+}
+.facts-number{
+  font-size: 3rem; 
+  font-weight: 600; 
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.facts-name{
+   font-size:1.5rem; 
+  font-weight: 600; 
+   margin-top: 10px;  
+}
+.section-description{
+ font-size: 1rem;
+ line-height:1.5rem;
+}
+.sponsors-info{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsors-description{
+    margin-top: 24px;
+}
+.sponsors-logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  
+
+
+}
+.sponsors-logo img{
+    filter: grayscale(100%);
+}
+.facts{
+ gap: 140px; 
+}
+.facts-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.facts-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;  
+}
+.fact-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.fact-card .fact-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+   
+}
+#badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight:500 ;
+    margin-left:-100px;
+    margin-top: -100px;
+}
+#exprience-year{
+   font-size: 4rem; 
+   font-weight: 700;
+}
+.facts-image img{
+    width: 100%;
+
 }
 
 
@@ -194,19 +279,46 @@ main{
 /* media quary start */
 @media screen and (max-width:576px){
 
-.navbar ,.nav-links,
+.navbar ,.nav-links,.facts,
 #features{
 flex-direction: column;
 }  
-.team-image{
+.team-image,.sponsors-logo{
 grid-template-columns: repeat(1 ,1fr);
    
+}
+.sponsors-logo{
+    justify-items: center;
+    gap: 24px;
+}
+.section-container{
+   justify-items: center;
+    grid-template-columns: repeat(1,1fr);
+    gap:24px;
+    
+}
+#badge{
+    
+    margin-left:20px;
+    margin-top: 20px;
 }
 
 }
 @media  screen and (min-width:576px)and (max-width:992px){
-   #features{
+   #features,.facts{
 flex-direction: column;
-}   
+} 
+.sponsors-logo,.section-container{
+grid-template-columns: repeat(3 ,1fr);
+gap: 50px;
+justify-items: center;
+   
+} 
+#badge{
+    
+    margin-left:20px;
+    margin-top: 20px;
+} 
+
     
 }
